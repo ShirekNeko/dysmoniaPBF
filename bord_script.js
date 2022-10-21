@@ -1,7 +1,7 @@
 const logOut=document.getElementById("logOut");
 const profCon=document.getElementById("profCon");
 const prof=document.getElementById("prof");
-const ping = document.getElementById("ping");
+const ping = document.getElementById("alerts-indicator");
 const cbAPC=document.getElementById('cAPC');
 if(document.getElementById('admin-link')){
 	cbAPC.style.display = 'block';
