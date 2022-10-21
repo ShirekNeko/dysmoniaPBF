@@ -1,13 +1,10 @@
-const logOut=document.getElementById("logOut");
-const profCon=document.getElementById("profCon");
-const prof=document.getElementById("prof");
-const ping = document.getElementById("alerts-indicator");
+const logOut=document.getElementById("logOut"); //Wylogowanie
+const profCon=document.getElementById("profCon"); // Panel uzytkownika
+const prof=document.getElementById("prof"); // Podgląd profilu
+const ping = document.querrySelector("alerts-indicator");
 const cbAPC=document.getElementById('cAPC');
-if(document.getElementById('admin-link')){
-	cbAPC.style.display = 'block';
-} else {
-	cbAPC.style.display = 'none';
-}	
+const info= document.getElementById('ogloszenia');
+const qLogBox = document.getElementById('qLog');	
 if('<!-- |name| -->' == 'Guest'){
 	logOut.style.display = 'none';
 	profCon.style.display = 'none';
@@ -18,10 +15,11 @@ if('<!-- |name| -->' == 'Guest'){
 	document.getElementById("profCon").href=document.getElementById("my-controls").getAttribute("href");		
 	document.getElementById("prof").href=document.getElementById("logged-in-as").getAttribute("href");
 }
-/**
-	OGŁOSZENIA
-**/
-const info= document.getElementById('ogloszenia');
+if(document.getElementById('admin-link')){
+	cbAPC.style.display = 'block';
+} else {
+	cbAPC.style.display = 'none';
+}
 if(window.location.href != "https://dysmonia.jcink.net/index.php"){
 	info.style.display = 'none';
 } else {
@@ -48,7 +46,7 @@ if('<!-- |new_alerts| -->'!='0'){
 /**
 	Szybkie logowanie
 **/
-const qLogBox = document.getElementById('qLog');
+
 if('<!-- |name| -->' != 'Guest'||window.location.href == "https://dysmonia.jcink.net/index.php?act=Login&CODE=00"){
 	qLogBox.style.display = 'none';
 } else {
