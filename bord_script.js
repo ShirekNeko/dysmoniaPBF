@@ -41,3 +41,13 @@ if('<!-- |new_alerts| -->'!='0'){
 } else {
 	ping.style.display = 'none';
 }
+
+/**
+	Szybkie logowanie
+**/
+const qLogBox = document.getElementById('qLog');
+if('<!-- |name| -->' != 'Guest'||window.location.href == "https://dysmonia.jcink.net/index.php?act=Login&CODE=00"){
+	qLogBox.style.display = 'none';
+} else {
+	qLogBox.style.display = 'block';
+}
