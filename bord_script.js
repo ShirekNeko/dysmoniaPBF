@@ -34,12 +34,15 @@ if(window.location.href != "https://dysmonia.jcink.net/index.php"){
 
 let button = document.querySelector('[title="Mark All Read"]')
 button.onclick = function() {
-	allRetBtn.style.display = 'none';
+	ping.style.display = 'none';
+	ping.style.order = '10';
 }
 if('<!-- |new_alerts| -->'!='0'){
 	ping.style.display = 'block';
+	ping.style.order = '5';
 } else {
 	ping.style.display = 'none';
+	ping.style.order = '10';
 }
 
 /**
