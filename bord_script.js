@@ -27,3 +27,17 @@ if(window.location.href != "https://dysmonia.jcink.net/index.php"){
 } else {
 	info.style.display = 'block';
 }
+
+/**
+	PING
+**/
+
+let button = document.querySelector('[title="Mark All Read"]')
+button.onclick = function() {
+	allRetBtn.style.display = 'none';
+}
+if('<!-- |new_alerts| -->'!='0'){
+	ping.style.display = 'block';
+} else {
+	ping.style.display = 'none';
+}
