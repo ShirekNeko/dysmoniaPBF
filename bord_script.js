@@ -39,7 +39,7 @@ button.onclick = function() {
 }
 if('<!-- |new_alerts| -->'!='0'){
 	ping.style.display = 'block';
-	ping.style.order = '5';
+	ping.style.order = '0';
 } else {
 	ping.style.display = 'none';
 	ping.style.order = '10';
